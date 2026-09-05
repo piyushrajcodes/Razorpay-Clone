@@ -1,5 +1,12 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'TASA Orbiter Display';
+  src: url('/fonts/TASAOrbiterDisplay-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+
 @theme {
     --color-deepBlue: #02042a;
     --color-lightBlue: #2b84ea;
@@ -12,4 +19,15 @@
     --color-deepBlueHead: #162f56;
     --color-gray2: #525a76;
     --fontMulish: "Mulish", sans-serif;
+    --font-tasa-display: "TASA Orbiter Display", sans-serif;
+
+    @keyframes rotate-text {
+        0%, 23% { transform: translateY(5%); }
+        25%, 47% { transform: translateY(-106.5%); }
+        50%, 70% { transform: translateY(-210%); }
+        75%, 95% { transform: translateY(-320%); }
+        100% { transform: translateY(0%); }
+    }
+
+    --animate-rotate-text: rotate-text 10s infinite ease-in-out;
 }
