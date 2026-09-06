@@ -18,8 +18,10 @@
     --color-grayBlue: #344a6c;
     --color-deepBlueHead: #162f56;
     --color-gray2: #525a76;
-    --fontMulish: "Mulish", sans-serif;
+    --font-Mulish: "Mulish", sans-serif;
     --font-tasa-display: "TASA Orbiter Display", sans-serif;
+    --font-inner-tight: "Inner Tight", sans-serif;
+    --font-intrument-serif: "Instrument Serif", sans-serif;
 
     @keyframes rotate-text {
         0%, 23% { transform: translateY(5%); }
@@ -30,4 +32,10 @@
     }
 
     --animate-rotate-text: rotate-text 10s infinite ease-in-out;
+
+    @keyframes infinite-scroll {
+        from { transform: translateX(0); }
+        to { transform: translateX(-100%); }
+    }
+    --animate-infinite-scroll: infinite-scroll 15s linear infinite;
 }
